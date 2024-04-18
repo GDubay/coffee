@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morning Bliss Café</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pixelify+Sans:wght@400..700&family=Shadows+Into+Light&family=Tilt+Neon&display=swap" rel="stylesheet">
+<style>
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* Espaçamento entre os itens */
+    }
+
+    .menu-item {
+        flex: 1 1 300px; /* Crescer e encolher igualmente, largura mínima de 300px */
+        max-width: 300px; /* Largura máxima de 300px */
+    }
+    .favorite-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+</style>
+</head>
+
+<body>
+    <header>
+        <img src="Morning Bliss Café.jpg" alt="cabeca">
+   
+    <nav>
+        <ul>
+            
+            <li><a href="">Sobre</a></li>
+            <li><a href="">Contato</a></li>
+          
+        </ul>
+    </nav>
+ </header>
+ <h2>Menu</h2>
+    <div class="container">
+        <div class="menu-item">
+            <img src="cofe.jpg" alt="Café">
+            <button class="favorite-button" aria-label="Favoritar"><img src="heart.png" alt="Favoritar"></button>
+            <h3>Café Espresso</h3>
+            <p>Envolve a passagem de água quente sob alta pressão através de grãos de café finamente moídos</p>
+            <p>Preço: R$2.50</p>
+            <button class="add-to-cart" data-name="Café Espresso" data-price="2.50">Adicionar ao Carrinho</button>
+            
+        </div>
+        <div class="menu-item">
+            <img src="cafecomlaranja.jpg" alt="Café com Laranja">
+            <h3>Café com Suco de Laranja</h3>
+            <p>Esse café com laranja é o drink refrescante,Feito com expresso, suco de laranja e muito gelo</p>
+            <p>Preço: R$4,99</p>
+            <button class="add-to-cart" data-name="Café Espresso" data-price="2.50">Adicionar ao Carrinho</button>
+            
+        </div>
+        <div class="menu-item">
+            <img src="CoffeeLatte.jpg" alt="Café Latte">
+            <h3>Café Latte</h3>
+            <p>café com leite que possui uma camada sedosa de creme como verdadeiro destaque da bebida</p>
+            <p>Preço: R$2,99</p>
+            <button class="add-to-cart" data-name="Café Espresso" data-price="2.50">Adicionar ao Carrinho</button>
+            
+        </div>
+        <div class="menu-item">
+            <img src="cafegeldo.jpg" alt="café gelado">
+            <h3>Café gelado</h3>
+            <p>bebida preparada à base de café, misturado com gelo</p>
+            <p>Preço: R$2,99</p>
+            <button class="add-to-cart" data-name="Café Espresso" data-price="2.50">Adicionar ao Carrinho</button>
+            
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Morning Bliss Café </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
